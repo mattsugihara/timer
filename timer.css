@@ -1,0 +1,32 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-family: sans-serif;
+}
+
+body {
+	background: rgba(200,200,200,.2);
+}
+
+#time{
+	position: absolute;
+	display: inline-block;
+	top:50%;
+	left:50%;
+	width:100%;
+	-webkit-transform:translate(-50%,-50%);
+		-ms-transform:translate(-50%,-50%);
+			transform:translate(-50%,-50%);
+	font-size: 20vw;
+	color:#333;
+	font-weight: 100;
+	text-align: center;
+}
+
+
+
+#hours-section{
+	display: none;
+}

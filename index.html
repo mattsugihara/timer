@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>stopwatch</title>
+	<meta name="viewport" content="initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="timer.css">
+</head>
+<body>
+
+<div id="time">
+	0:00.00
+</div>
+
+	<script type="text/javascript" src="timer.js"></script>
+	<script type="text/javascript" src="doubleTap.js"></script>
+	<script>
+		var HAS_TOUCH = ('ontouchstart' in window);
+		var tap = document.getElementById('time');
+		tap.addEventListener(HAS_TOUCH ? 'touchend' : 'mouseup', doubleTap(), false);
+	</script>
+</body>
+</html>
