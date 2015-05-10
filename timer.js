@@ -45,7 +45,7 @@ function updateElement (elementOffset,remainingTime) {
   };
 
   obj.style.top = (elementOffset + (elementHeight/2)) + 'px';
-  obj.innerHTML = digits[1] + ':' + digits[2] + '.' + digits[3];
+  obj.innerHTML = digits[1] + '<span>m</span>' + digits[2] + '<span>s</span>' + digits[3];
 }
 
 function makeReasonable () {
