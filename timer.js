@@ -8,7 +8,8 @@ var windowHeight = window.innerHeight;
 var elementHeight = obj.offsetHeight;
 var freedom = windowHeight - elementHeight;
 var elementOffset,currentProgress,endTime;
-var maxCountdownDuration = 600000;
+var maxMinutes = 10;
+var maxCountdownDuration = (60*1000) * maxMinutes;
 var digits = new Array(0,0,0,0);
 
 
